@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://c1wivng2n5udo"]
+
+[ext_resource type="Script" uid="uid://dk5o4qlavoksk" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://bvtpnyotk01le" path="res://icon.svg" id="2_i3pqv"]
+[ext_resource type="Script" uid="uid://dw6mo88ai038a" path="res://npc.gd" id="3_i3pqv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_en43g"]
+size = Vector2(64, 59.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kkbf6"]
+size = Vector2(126.945244, 127.98597)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aiwp4"]
+size = Vector2(293.66724, 280.4281)
+
+[node name="Main" type="Node2D" unique_id=226602238]
+position = Vector2(-2.0000002, 1)
+rotation = -0.057511147
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=576194785]
+position = Vector2(549.8025, 500.44318)
+rotation = 0.016783133
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1190696942]
+position = Vector2(0, 9.536743e-07)
+scale = Vector2(0.527, 0.5)
+texture = ExtResource("2_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1457689175]
+shape = SubResource("RectangleShape2D_en43g")
+
+[node name="MessageLabel" type="Label" parent="." unique_id=1209176511 groups=["messages"]]
+offset_left = 488.76096
+offset_top = 627.13055
+offset_right = 582.3109
+offset_bottom = 650.13055
+rotation = 0.019472599
+text = "全員殺す"
+
+[node name="NPC" type="StaticBody2D" parent="." unique_id=1692750836]
+position = Vector2(557.5104, 285.51743)
+script = ExtResource("3_i3pqv")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC" unique_id=670940243]
+modulate = Color(0.9454985, 6.199241e-05, 0.7119017, 1)
+rotation = 0.07284992
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("2_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC" unique_id=1318285887]
+position = Vector2(-0.46002197, -0.056518555)
+rotation = 0.06308241
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_kkbf6")
+
+[node name="InteractionArea" type="Area2D" parent="NPC" unique_id=1995893978]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/InteractionArea" unique_id=657822885]
+position = Vector2(0.8834019, 2.054161)
+rotation = 0.059613626
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_aiwp4")
+debug_color = Color(0.8734848, 0.3135745, 0.39617598, 0.41960785)
