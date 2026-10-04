@@ -11,15 +11,15 @@ func _test_battle_calc() -> void:
     var rng := RandomNumberGenerator.new()
     rng.seed = 42
 
-    var battle = battle_calc_script.new(rng)
+    var battle: RefCounted = battle_calc_script.new(rng)
     var test_config := {"damage_variance": 0.1, "min_damage": 1}
-    var damage := battle.calculate_physical_damage(12, 3, test_config)
+    var damage: int = battle.calculate_physical_damage(12, 3, test_config)
     assert(damage >= 1, "Damage must be at least 1")
     print("BattleCalc test passed. Damage: %d" % damage)
 
 func _test_condition_evaluator() -> void:
     var evaluator_script = load("res://scripts/logic/condition_evaluator.gd")
-    var evaluator = evaluator_script.new()
+    var evaluator: RefCounted = evaluator_script.new()
     
     var flags := {
         "met_chief": true,
