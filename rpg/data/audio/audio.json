@@ -1,0 +1,15 @@
+{
+  "id": "audio_catalog",
+  "bgm": {
+    "bgm_title": "res://rpg/assets/audio/bgm_title.ogg",
+    "bgm_village": "res://rpg/assets/audio/bgm_village.ogg",
+    "bgm_field": "res://rpg/assets/audio/bgm_field.ogg",
+    "bgm_battle": "res://rpg/assets/audio/bgm_battle.ogg"
+  },
+  "se": {
+    "se_confirm": "res://rpg/assets/audio/se_confirm.ogg",
+    "se_cancel": "res://rpg/assets/audio/se_cancel.ogg",
+    "se_attack": "res://rpg/assets/audio/se_attack.ogg",
+    "se_damage": "res://rpg/assets/audio/se_damage.ogg"
+  }
+}

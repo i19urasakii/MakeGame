@@ -1,0 +1,12 @@
+{
+  "id": "ui_strings",
+  "title": "RPG",
+  "subtitle": "はじまりの村",
+  "start_game": "はじめる",
+  "continue_game": "つづきから",
+  "status": "ステータス",
+  "inventory": "どうぐ",
+  "equipment": "そうび",
+  "save": "セーブ",
+  "loading": "ロード中..."
+}

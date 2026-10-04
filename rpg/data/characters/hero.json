@@ -1,0 +1,19 @@
+{
+  "id": "hero",
+  "name": "ゆうしゃ",
+  "sprite": "res://rpg/assets/characters/player/hero.png",
+  "levels_table": "hero_levels",
+  "start": {
+    "map": "village",
+    "gold": 50,
+    "weapon": "wood_stick",
+    "armor": "cloth_clothes",
+    "items": [
+      { "id": "herb", "amount": 2 }
+    ]
+  },
+  "learnset": [
+    { "level": 2, "spell": "heal" },
+    { "level": 4, "spell": "flame" }
+  ]
+}
