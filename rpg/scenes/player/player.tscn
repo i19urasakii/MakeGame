@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://rpg/scripts/world/player_controller.gd" id="1"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+scale = Vector2(1.2, 1.2)
+modulate = Color(0.7, 0.9, 0.8, 1)
+region_enabled = false

@@ -14,5 +14,4 @@ func _ready() -> void:
     Flow.start_title()
 
 func _on_start_button_pressed() -> void:
-    Flow.start_explore()
-    print("Explore mode started.")
+    get_tree().change_scene_to_file("res://rpg/scenes/main.tscn")

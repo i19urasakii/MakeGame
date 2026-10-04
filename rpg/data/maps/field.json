@@ -1,0 +1,15 @@
+{
+  "id": "field",
+  "name": "はなれた草原",
+  "size": { "w": 20, "h": 15 },
+  "player_start": { "x": 1, "y": 1, "facing": "down" },
+  "spawn": { "x": 1, "y": 1, "facing": "down" },
+  "allow_menu_save": false,
+  "encounter": { "enabled": true, "rate_per_step": 0.06 },
+  "blocked": [
+    { "x": 5, "y": 3 },
+    { "x": 8, "y": 5 },
+    { "x": 10, "y": 7 },
+    { "x": 12, "y": 9 }
+  ]
+}

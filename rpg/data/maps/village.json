@@ -1,0 +1,19 @@
+{
+  "id": "village",
+  "name": "はじまりの村",
+  "size": { "w": 20, "h": 15 },
+  "player_start": { "x": 1, "y": 1, "facing": "down" },
+  "spawn": { "x": 1, "y": 1, "facing": "down" },
+  "allow_menu_save": true,
+  "encounter": { "enabled": false },
+  "blocked": [
+    { "x": 7, "y": 4 },
+    { "x": 8, "y": 4 },
+    { "x": 9, "y": 4 },
+    { "x": 7, "y": 5 },
+    { "x": 9, "y": 5 },
+    { "x": 7, "y": 6 },
+    { "x": 8, "y": 6 },
+    { "x": 9, "y": 6 }
+  ]
+}
