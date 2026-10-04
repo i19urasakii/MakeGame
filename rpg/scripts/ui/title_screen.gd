@@ -1,5 +1,5 @@
 extends Control
-class_name TitleScreen
+class_name RPGTitleScreen
 
 @onready var title_label: Label = %TitleLabel
 @onready var subtitle_label: Label = %SubtitleLabel
