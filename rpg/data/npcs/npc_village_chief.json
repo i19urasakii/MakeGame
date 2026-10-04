@@ -1,0 +1,8 @@
+{
+  "id": "npc_village_chief",
+  "name": "村長",
+  "sprite": "res://rpg/assets/characters/villagers/chief.png",
+  "move_pattern": "static",
+  "dialogue_id": "village_chief_001",
+  "role": "chief"
+}

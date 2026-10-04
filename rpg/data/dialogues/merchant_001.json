@@ -1,0 +1,8 @@
+{
+  "id": "merchant_001",
+  "start": "n1",
+  "nodes": {
+    "n1": { "type": "text", "speaker": "商人", "text": "武器と防具は大事だぞ。まずは村で準備を整えろ。", "next": "n2" },
+    "n2": { "type": "text", "speaker": "商人", "text": "ゴールドを貯めて、良い装備を揃えるんだ。", "next": null }
+  }
+}

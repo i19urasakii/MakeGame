@@ -38,6 +38,10 @@ func _physics_process(delta: float) -> void:
 
     var move_dir := _read_move_direction()
     if move_dir == Vector2i.ZERO:
+        if Input.is_action_just_pressed("confirm"):
+            var scene := get_tree().current_scene
+            if scene != null and scene.has_method("try_interact"):
+                scene.try_interact(current_cell, facing)
         return
 
     var next_cell := grid_world.try_move_from(current_cell, move_dir)

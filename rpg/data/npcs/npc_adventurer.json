@@ -1,0 +1,8 @@
+{
+  "id": "npc_adventurer",
+  "name": "冒険者",
+  "sprite": "res://rpg/assets/characters/villagers/adventurer.png",
+  "move_pattern": "static",
+  "dialogue_id": "adventurer_001",
+  "role": "guide"
+}

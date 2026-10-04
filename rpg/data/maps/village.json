@@ -15,5 +15,10 @@
     { "x": 7, "y": 6 },
     { "x": 8, "y": 6 },
     { "x": 9, "y": 6 }
+  ],
+  "npcs": [
+    { "npc_id": "npc_village_chief", "x": 6, "y": 8, "name": "村長", "dialogue_id": "village_chief_001" },
+    { "npc_id": "npc_adventurer", "x": 11, "y": 10, "name": "冒険者", "dialogue_id": "adventurer_001" },
+    { "npc_id": "npc_merchant", "x": 14, "y": 8, "name": "商人", "dialogue_id": "merchant_001" }
   ]
 }

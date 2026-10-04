@@ -1,0 +1,9 @@
+{
+  "id": "village_chief_001",
+  "start": "n1",
+  "nodes": {
+    "n1": { "type": "text", "speaker": "村長", "text": "よく来たな、旅の者よ。", "next": "n2" },
+    "n2": { "type": "text", "speaker": "村長", "text": "ここから北の山道を越え、魔王城へ向かうのだ。", "next": "n3" },
+    "n3": { "type": "text", "speaker": "村長", "text": "魔王を倒し、村に平和を取り戻してくれ。", "next": null }
+  }
+}

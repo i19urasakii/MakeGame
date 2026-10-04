@@ -1,0 +1,8 @@
+{
+  "id": "adventurer_001",
+  "start": "n1",
+  "nodes": {
+    "n1": { "type": "text", "speaker": "冒険者", "text": "外ではモンスターと戦う。気を抜くなよ。", "next": "n2" },
+    "n2": { "type": "text", "speaker": "冒険者", "text": "戦いに勝てば経験値とゴールドが手に入る。装備が大切だ。", "next": null }
+  }
+}

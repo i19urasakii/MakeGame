@@ -1,0 +1,8 @@
+{
+  "id": "npc_merchant",
+  "name": "商人",
+  "sprite": "res://rpg/assets/characters/villagers/merchant.png",
+  "move_pattern": "static",
+  "dialogue_id": "merchant_001",
+  "role": "merchant"
+}
