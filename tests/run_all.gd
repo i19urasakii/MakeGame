@@ -1,17 +1,26 @@
 extends SceneTree
 
-const BattleCalc = preload("res://scripts/logic/battle_calc.gd")
-const ConditionEvaluator = preload("res://scripts/logic/condition_evaluator.gd")
-
 func _initialize() -> void:
+    _test_battle_calc()
+    _test_condition_evaluator()
+    print("All tests passed.")
+    quit()
+
+func _test_battle_calc() -> void:
+    var battle_calc_script = load("res://scripts/logic/battle_calc.gd")
     var rng := RandomNumberGenerator.new()
     rng.seed = 42
 
-    var battle := BattleCalc.new(rng)
-    var damage := battle.calculate_physical_damage(12, 3, {"damage_variance": 0.1, "min_damage": 1})
+    var battle = battle_calc_script.new(rng)
+    var test_config := {"damage_variance": 0.1, "min_damage": 1}
+    var damage := battle.calculate_physical_damage(12, 3, test_config)
     assert(damage >= 1, "Damage must be at least 1")
+    print("BattleCalc test passed. Damage: %d" % damage)
 
-    var evaluator := ConditionEvaluator.new()
+func _test_condition_evaluator() -> void:
+    var evaluator_script = load("res://scripts/logic/condition_evaluator.gd")
+    var evaluator = evaluator_script.new()
+    
     var flags := {
         "met_chief": true,
         "defeated_demon_king": false,
@@ -27,6 +36,4 @@ func _initialize() -> void:
         ]
     }
     assert(evaluator.evaluate(condition, flags), "Condition check should pass")
-
-    print("All tests passed.")
-    quit()
+    print("ConditionEvaluator test passed.")
