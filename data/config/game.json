@@ -1,0 +1,14 @@
+{
+  "id": "game",
+  "title": "rpg",
+  "window_width": 1280,
+  "window_height": 960,
+  "tile_size": 32,
+  "move_time_sec": 0.15,
+  "text_speed": 30,
+  "start_gold": 50,
+  "start_map": "village",
+  "start_position": { "x": 14, "y": 18 },
+  "start_facing": "down",
+  "allow_menu_save": true
+}

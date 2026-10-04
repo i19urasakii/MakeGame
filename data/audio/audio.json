@@ -1,0 +1,15 @@
+{
+  "id": "audio_catalog",
+  "bgm": {
+    "bgm_title": "res://assets/audio/bgm_title.ogg",
+    "bgm_village": "res://assets/audio/bgm_village.ogg",
+    "bgm_field": "res://assets/audio/bgm_field.ogg",
+    "bgm_battle": "res://assets/audio/bgm_battle.ogg"
+  },
+  "se": {
+    "se_confirm": "res://assets/audio/se_confirm.ogg",
+    "se_cancel": "res://assets/audio/se_cancel.ogg",
+    "se_attack": "res://assets/audio/se_attack.ogg",
+    "se_damage": "res://assets/audio/se_damage.ogg"
+  }
+}
